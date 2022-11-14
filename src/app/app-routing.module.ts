@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutMeComponent } from './modulos/developer/about-me/about-me.component';
+import { CvOnlineComponent } from './modulos/developer/cv-online/cv-online.component';
 import { HomePageComponent } from './modulos/home/home-page/home-page.component';
-import { GeneradorRutinaComponent } from './modulos/mis-apps/generador-rutina/generador-rutina.component';
+import { MyAppsComponent } from './modulos/mis-apps/my-apps/my-apps.component';
 
 const routes: Routes = [
   {
@@ -12,18 +12,18 @@ const routes: Routes = [
       import('./modulos/home/home.module').then((m) => m.HomeModule),
   },
   {
-    path: 'about.me',
-    component: AboutMeComponent,
+    path: 'my-apps',
+    component: MyAppsComponent,
     loadChildren: () =>
-      import('./modulos/developer/developer.module').then(
-        (m) => m.DeveloperModule
+      import('./modulos/mis-apps/mis-apps.module').then(
+        (m) => m.MisAppsModule
       ),
   },
   {
-    path: 'rutina',
-    component: GeneradorRutinaComponent,
+    path: 'developer',
+    component: CvOnlineComponent,
     loadChildren: () =>
-      import('./modulos/mis-apps/mis-apps.module').then((m) => m.MisAppsModule),
+      import('./modulos/developer/developer.module').then((m) => m.DeveloperModule),
   },
 ];
 
