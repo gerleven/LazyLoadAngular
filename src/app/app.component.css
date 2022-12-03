@@ -1,20 +1,28 @@
-.routerOutletContainer{
-    margin: 10px 10px 0 10px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid rgb(235, 235, 241);
-    width: 100%;
+.routerOutletContainer {
+  margin: 10px 0 0 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(235, 235, 241);
+  width: 100%;
 }
 
-.routerOutletHeader{
-    display: block;
-    margin: auto;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
+.routerOutletHeader {
+  display: block;
+  margin: auto;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
 }
 
-.routerOutletContent{
-    height: 95%;
-    border-radius: 10px;
+.routerOutletContent {
+  height: 95%;
+  border-radius: 10px;
+}
+
+.footerApp {
+  background-color: rgb(238, 245, 255);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(129, 160, 202);
+  height: 100%;
 }
