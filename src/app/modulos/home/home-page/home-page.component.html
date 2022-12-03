@@ -1,6 +1,16 @@
-<p>home-page works!</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31536306.714862086!2d-54.01447990393665!3d-20.38062741924525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1583676893900!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-<ul class="nav justify-content-center">
+<h3>Home Page of Home Module</h3>
+<h5>body page:</h5>
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31536306.714862086!2d-54.01447990393665!3d-20.38062741924525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1583676893900!5m2!1ses!2sar"
+  width="600"
+  height="450"
+  frameborder="0"
+  style="border: 0; height: 30vh;"
+  allowfullscreen=""
+></iframe>
+<div>
+  <h5>Sub modules:</h5>
+  <ul class="nav justify-content-center">
     <li class="nav-item">
       <a class="nav-link" routerLink="about-me">About me</a>
     </li>
@@ -8,4 +18,14 @@
       <a class="nav-link" routerLink="rutinas">Generador de rutina</a>
     </li>
   </ul>
-  <router-outlet></router-outlet>
+  <div class="col-12">
+    <div class="row" style="height: 20vh; overflow-y: auto;">
+      <div #routerOutlet class="routerOutletContainer" style="background-color:rgb(255, 248, 242)">
+        <span #header class="routerOutletHeader">{{'<'}}Home router oulet{{'/>'}}</span>
+        <div class="routerOutletContent" style="background-color: #FFF;">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
