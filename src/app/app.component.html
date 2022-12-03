@@ -1,5 +1,8 @@
 <div class="container">
-  <div class="row" style="height: 70vh">
+  <div class="col-12">
+
+  
+  <div class="row" style="height: 80vh">
     <div
       class="col-3"
       style="background-color: rgb(255, 244, 244); height: 100%"
@@ -21,45 +24,53 @@
       </ul>
     </div>
     <div class="col-9">
-      <div class="row">
-        <router-outlet></router-outlet>
+      <div class="row" style="height: 100%;">
+        <div #routerOutlet class="routerOutletContainer" style="background-color:rgb(242, 248, 255)">
+          <span #header class="routerOutletHeader">{{'<'}}App router oulet{{'/>'}}</span>
+          <div class="routerOutletContent" style="background-color: #FFF;">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div style="height: 20vh">
-    <div
-      class="row"
-      style="
-        background-color: rgb(238, 245, 255);
-        padding: 10px;
-        margin-top: 10vh;
-        border-radius: 10px;
-        border: 1px solid rgb(129, 160, 202);
-      "
-    >
-      <div>
-        <div class="row">
-          <div class="col">
-            <p>Fuente del ejemplo:</p>
+  <div style="height: 20vh; padding-top: 10px;">
+    <div class="col-12">
+      <div
+        class="row"
+        style="
+          background-color: rgb(238, 245, 255);
+          padding: 10px;
+          border-radius: 10px;
+          border: 1px solid rgb(129, 160, 202);
+        "
+      >
+        <div>
+          <div class="row">
+            <div class="col">
+              <p>Fuente del ejemplo:</p>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Lazy Load en Angular:
-            <a
-              href="https://www.tutorialesprogramacionya.com/angularya/detalleconcepto.php?punto=85&codigo=85&inicio=80"
-              >Link</a
-            >
+          <div class="row">
+            <div class="col">
+              Lazy Load en Angular:
+              <a
+                href="https://www.tutorialesprogramacionya.com/angularya/detalleconcepto.php?punto=85&codigo=85&inicio=80"
+                >Link</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Grid System (row y col de bootstrap):
-            <a href="https://getbootstrap.com/docs/4.1/layout/grid/">Link</a>
+          <div class="row">
+            <div class="col">
+              Grid System (row y col de bootstrap):
+              <a href="https://getbootstrap.com/docs/4.1/layout/grid/">Link</a>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
